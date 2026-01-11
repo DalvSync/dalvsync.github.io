@@ -3,31 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Простой HTML-сайт</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            text-align: center;
-            padding-top: 100px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-        footer {
-            margin-top: 50px;
-            color: #aaa;
-        }
-    </style>
+    <title>eNotes - Безопасные заметки</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Добро пожаловать на мой сайт!</h1>
-    <p>Этот сайт размещён на GitHub Pages и написан полностью на HTML.</p>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">eNotes</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="encryption.html">Шифрование</a></li>
+                <li><a href="creators.html">Авторы</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>eNotes</h1>
+        <p class="subtitle">Безопасное приложение для заметок с шифрованием AES-GCM</p>
+
+        <section class="features-grid">
+            <div class="card">
+                <h3>🔐 Пароль для каждой заметки</h3>
+                <p>Назначайте уникальный пароль для каждой заметки для максимального контроля доступа.</p>
+            </div>
+            <div class="card">
+                <h3>🛡️ AES-GCM Шифрование</h3>
+                <p>Шифрование AES-256 в режиме Galois/Counter Mode (GCM). Ключи создаются через PBKDF2-HMAC-SHA256.</p>
+            </div>
+            <div class="card">
+                <h3>💻 Кроссплатформенность</h3>
+                <p>Построен на PyQt5. Чистый и отзывчивый интерфейс для Windows, macOS и Linux.</p>
+            </div>
+            <div class="card">
+                <h3>🚫 Zero-Knowledge</h3>
+                <p>Ваши пароли и ключи никогда не хранятся в открытом виде и не покидают ваше устройство.</p>
+            </div>
+            <div class="card">
+                <h3>📦 Легкий бэкап</h3>
+                <p>Легко экспортируйте и импортируйте пакет зашифрованных заметок на другие устройства.</p>
+            </div>
+        </section>
+
+        <section class="install-block">
+            <h2>🚀 Как запустить</h2>
+            <p>Для работы приложения необходимо разместить следующие файлы в одной папке:</p>
+            <ul>
+                <li><code>storage.py</code></li>
+                <li><code>crypto.py</code></li>
+                <li><code>main.pyw</code></li>
+                <li><code>icon.ico</code></li>
+            </ul>
+            
+            <br>
+            <p><strong>Установите зависимости:</strong></p>
+            <pre>pip install PyQt5 cryptography Pillow</pre>
+            
+            <p><strong>Запуск:</strong></p>
+            <pre>python main.pyw</pre>
+        </section>
+    </main>
+
     <footer>
-        <p>© 2025 Владислав. Все права защищены.</p>
+        <p>&copy; 2024 eNotes Project. Secure & Private.</p>
     </footer>
+
 </body>
 </html>
