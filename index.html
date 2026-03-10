@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | DalvSync</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">DalvSync</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section style="margin-bottom: 4rem;">
+            <h1>Welcome. I'm <span class="highlight">DalvSync</span>.</h1>
+            <p>A 16-year-old developer from Dnipro. I write code, tinker with hardware, and break things just to learn how to fix them.</p>
+            
+            <div class="terminal-box">
+                <span style="color: #8b949e;">dalvsync@home-pc:~$</span> <span id="typewriter"></span><span class="cursor"></span>
+            </div>
+
+            <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+                <a href="projects.html" class="mod-btn" style="padding: 0.8rem 1.5rem;">View My Projects</a>
+                <a href="about.html" class="mod-btn-outline" style="padding: 0.8rem 1.5rem;">More About Me</a>
+            </div>
+        </section>
+
+        <section style="margin-bottom: 4rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">Core Tech Stack</h2>
+            <div class="skills-grid">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">C# Programming</span>
+		<span class="skill-badge">Unity</span>
+                <span class="skill-badge">Linux</span>
+                <span class="skill-badge">Java (Modding)</span>
+            </div>
+        </section>
+        
+        <section style="margin-bottom: 2rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-main);">Current Focus</h2>
+            <div class="mod-card" style="cursor: default; transform: none; box-shadow: none;">
+                <p style="margin-bottom: 0;">Right now, I'm actively developing <strong>Quick Stash</strong> and <strong>Tick Flow</strong>, while simultaneously learning <strong>C#</strong> to learn how to create games in <strong>Unity</strong> </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DalvSync. Built with code, caffeine, and terminal output.</p>
+        <p style="font-size: 0.8em; margin-top: 0.5rem; color: var(--border-color);">All mods are MIT Licensed | Hosted on GitHub</p>
+    </footer>
+
+    <script>
+        const textToType = " ./run_developer.sh --coffee=true";
+        let i = 0;
+        const speed = 70;
+
+        function typeWriter() {
+            if (i < textToType.length) {
+                document.getElementById("typewriter").innerHTML += textToType.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        
+        setTimeout(typeWriter, 500);
+    </script>
+</body>
+</html>
