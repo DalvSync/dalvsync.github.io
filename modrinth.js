@@ -7,7 +7,9 @@ async function fetchModrinthData() {
         container.innerHTML = ''; 
 
         for (const modSlug of myMods) {
-            const response = await fetch(`https://api.modrinth.com/v2/project/${modSlug}`);
+            const response = await fetch(`https://api.modrinth.com/v2/project/${modSlug}`, {
+    		cache: 'no-cache' 
+		});
             
             if (!response.ok) {
                 console.error(`Could not fetch ${modSlug}`);
@@ -20,7 +22,7 @@ async function fetchModrinthData() {
             card.className = 'mod-card';
 
             const iconUrl = mod.icon_url || 'https://via.placeholder.com/64x64/1e293b/38bdf8?text=No+Icon';
-            const downloads = mod.downloads.toLocaleString('en-US'); // Красивый формат чисел
+            const downloads = mod.downloads.toLocaleString('en-US');
 
             card.innerHTML = `
                 <div class="mod-header">
