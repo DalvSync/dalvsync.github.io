@@ -21,7 +21,6 @@ body {
     line-height: 1.6;
 }
 
-/* Навигация */
 header {
     border-bottom: 1px solid var(--border-color);
     background: rgba(13, 17, 23, 0.85);
@@ -108,7 +107,7 @@ p {
 .mod-card:hover {
     transform: translateY(-4px);
     border-color: var(--accent-bright);
-    box-shadow: 0 4px 20px rgba(46, 160, 67, 0.1); /* Легкое зеленое свечение */
+    box-shadow: 0 4px 20px rgba(46, 160, 67, 0.1);
 }
 
 .mod-header {
@@ -375,3 +374,127 @@ footer {
     flex-direction: column;
     align-items: flex-end;
     gap: 0.2rem;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.gh-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gh-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.5rem;
+}
+
+.gh-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-main);
+}
+
+.gh-header-info h3 {
+    font-size: 1.5rem;
+    color: var(--text-main);
+    margin-bottom: 0.2rem;
+}
+
+.gh-header-info p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.gh-btn {
+    margin-left: auto;
+    padding: 0.6rem 1.2rem;
+    background: transparent;
+    border: 1px solid var(--accent-main);
+    color: var(--accent-main);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+    .gh-btn:hover {
+        background: var(--accent-main);
+        color: var(--bg-color);
+    }
+
+.gh-stats-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+    .gh-stats-grid img {
+        width: 48%;
+        object-fit: contain;
+    }
+
+.gh-graph {
+    background: var(--bg-color);
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    overflow-x: auto; 
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .contact-card {
+        padding: 2rem 1rem;
+    }
+
+    .email-link {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+        word-break: break-word;
+    }
+
+    .gh-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gh-btn {
+        margin-left: 0 !important;
+        width: 100%;
+        text-align: center;
+    }
+    .gh-stats-grid {
+        flex-direction: column;
+    }
+
+    .gh-stats-grid img {
+        width: 100%; 
+    }
+}

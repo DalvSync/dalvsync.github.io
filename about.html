@@ -22,23 +22,56 @@
 
     <main>
         <h1>About <span class="highlight">Me</span></h1>
-        
+
         <div class="mod-card" style="margin-top: 2rem; cursor: default; transform: none; box-shadow: none;">
             <p>Hi, I'm Vlad, mostly known online as <strong>DalvSync</strong>. I am a 16-year-old developer based in Dnipro, Ukraine.</p>
-            
+
             <p>My tech journey is driven by curiosity and a love for creating things. Right now, I am actively learning <strong>C# for Unity</strong> to bring my own game ideas to life. Game development is a massive world, and I'm enjoying every step of the process.</p>
-            
+
             <p>Alongside that, I develop mods purely for the soul. It’s my way of relaxing, experimenting with code, and giving back to the community with fun and useful mechanics.</p>
-            
+
             <p>Beyond games, I still enjoy diving into the lower levels of systems, writing in C and Python, and daily-driving Arch Linux.</p>
+        </div>
+
+        <div class="github-showcase" style="margin-top: 4rem; margin-bottom: 4rem;">
+            <h2 style="font-size: 1.8rem; text-align: left; margin-bottom: 2rem;">My <span class="highlight">GitHub</span> Activity</h2>
+
+            <div class="gh-card">
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1.5rem; margin-bottom: 2rem;">
+
+                    <div style="display: flex; align-items: center; gap: 1.5rem;">
+                        <img src="https://github.com/DalvSync.png" alt="DalvSync GitHub" class="gh-avatar">
+                        <div>
+                            <h3 style="font-size: 1.5rem; color: var(--text-main); margin-bottom: 0.2rem;">DalvSync</h3>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.8rem;">Open Source & Game Dev</p>
+                            <a href="https://github.com/DalvSync" target="_blank" class="gh-btn" style="padding: 0.4rem 1rem; font-size: 0.9rem;">View Profile</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DalvSync&layout=compact&theme=dark&bg_color=161b22&hide_border=true&title_color=2ea043&text_color=c9d1d9" alt="Top Languages" style="max-height: 165px;">
+                    </div>
+                </div>
+
+                <h4 style="margin-bottom: 1rem; color: var(--accent-main); font-size: 1.1rem;">Recently Updated</h4>
+                <div id="latest-repos" class="projects-grid" style="margin-bottom: 2.5rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+                    <p class="loading">Fetching latest repositories from GitHub...</p>
+                </div>
+
+                <div class="gh-graph" style="background: transparent; border: none; padding: 0;">
+                    <h4 style="margin-bottom: 1rem; color: var(--accent-main); font-size: 1.1rem;">Contributions</h4>
+                    <div style="background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; overflow-x: auto;">
+                        <img src="https://ghchart.rshah.org/46c0af/DalvSync" alt="DalvSync's Contribution Chart" style="min-width: 700px; width: 100%; display: block; margin: 0 auto; filter: invert(1) hue-rotate(180deg) brightness(1.2);">
+                    </div>
+                </div>
         </div>
 
         <div class="contact-card">
             <h2>Let's Connect</h2>
             <p>I am always open to communication! Whether you want to discuss code, collaborate on a project, or just have a chat about game dev and Linux - feel free to reach out.</p>
-            
+
             <a href="mailto:dalvsync@gmail.com" class="email-link">
-                <span class="email-icon">✉️</span> 
+                <span class="email-icon">✉️</span>
                 dalvsync@gmail.com
             </a>
         </div>
@@ -49,5 +82,6 @@
         <p style="font-size: 0.8em; margin-top: 0.5rem; color: var(--border-color);">Hosted on GitHub</p>
     </footer>
 
+    <script src="github.js" defer></script>
 </body>
 </html>
