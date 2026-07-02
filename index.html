@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | DalvSync</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">DALVSYNC</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switch" style="margin-left: auto; display: flex; align-items: center;">
+                <button id="lang-toggle" class="btn" style="padding: 5px 10px; font-size: 10px; margin: 0;" data-i18n="lang_btn">UK</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero box">
+                <div class="avatar">
+                    <img src="dalvsync.png" alt="Avatar" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                    <span style="display:none;">[IMG]</span>
+                </div>
+                <div class="intro">
+                    <h1 id="greeting" class="typing-text"></h1>
+                    <p style="margin-top: 25px; line-height: 2;" data-i18n="intro_p">Welcome to my cozy digital space. I am a frontend developer who loves bringing pixel-perfect, nostalgic designs to life.</p>
+                </div>
+            </section>
+
+            <section class="box" style="border-color: #555;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+                    <h2 style="color: #888;" data-i18n="recent_title">RECENT TRANSMISSIONS</h2>
+                    <a href="news.html" style="color: var(--accent-color); text-decoration: none; font-size: 12px;" data-i18n="read_all">READ ALL ></a>
+                </div>
+                <div id="recent-transmission-container" style="border-left: 4px solid var(--accent-color-2); padding-left: 20px;">
+                </div>
+            </section>
+
+            <section style="text-align: center; margin-top: 50px;">
+                <p style="margin-bottom: 20px; color: #aaa;" data-i18n="cta_p">Want to know more or work with me?</p>
+                <a href="about.html" class="btn" data-i18n="btn_profile">VIEW PROFILE</a>
+            </section>
+        </main>
+
+        <footer>
+            <p data-i18n="copy">&copy; 2026 DalvSync. Take a deep breath and enjoy.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

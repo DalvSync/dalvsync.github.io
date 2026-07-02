@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS | DalvSync</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">DALVSYNC</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="news.html" class="active">NEWS</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switch" style="margin-left: auto; display: flex; align-items: center;">
+                <button id="lang-toggle" class="btn" style="padding: 5px 10px; font-size: 10px; margin: 0;" data-i18n="lang_btn">UK</button>
+            </div>
+        </header>
+
+        <main>
+            <h1 style="margin-bottom: 30px; text-align: center; color: var(--accent-color);" data-i18n="news_title">SYSTEM UPDATES</h1>
+            
+            <section id="news-feed-container" class="news-feed box">
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Player 1. Take a deep breath and enjoy.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
