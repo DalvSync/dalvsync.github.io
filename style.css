@@ -185,16 +185,53 @@ h1, h2, h3 {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 20px 10px;
+  }
+  .box {
+    padding: 20px;
+    margin-bottom: 25px;
+  }
   .hero {
     flex-direction: column;
     text-align: center;
+    gap: 25px;
   }
   header {
     flex-direction: column;
     text-align: center;
+    padding: 15px;
+    gap: 15px;
   }
   nav ul {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 8px;
+  }
+  nav a {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+  .lang-switch {
+    margin-left: 0 !important;
+    justify-content: center;
+  }
+  .avatar {
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .btn {
+    padding: 12px 20px;
+    font-size: 12px;
   }
 }
